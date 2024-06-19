@@ -144,6 +144,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  const callBtn = document.querySelector('.call-btn');
+  if (callBtn) {
+    const togglecallBtn = function() {
+      window.scrollY > 100 ? callBtn.classList.add('active') : callBtn.classList.remove('active');
+    }
+    window.addEventListener('load', togglecallBtn);
+    document.addEventListener('scroll', togglecallBtn);
+    callBtn.addEventListener('click', window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }));
+  }
+
+  const whatsappBtn = document.querySelector('.whatsapp-btn');
+  if (whatsappBtn) {
+    const togglewhatsappBtn = function() {
+      window.scrollY > 100 ? whatsappBtn.classList.add('active') : whatsappBtn.classList.remove('active');
+    }
+    window.addEventListener('load', togglewhatsappBtn);
+    document.addEventListener('scroll', togglewhatsappBtn);
+    whatsappBtn.addEventListener('click', window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }));
+  }
+  
+
   /**
    * Initiate Pure Counter
    */

@@ -2743,3 +2743,68 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+/*  */
+.call-btn {
+  position: fixed;
+  cursor: pointer;
+  top: 100%;
+  left: 2%;
+  z-index: 4;
+  border: none;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.call-btn.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  left: 2%;
+  top: 69%;
+}
+
+/*  */
+
+.whatsapp-btn {
+  position: fixed;
+  cursor: pointer;
+  top: 100%;
+  left: 2%;
+  z-index: 4;
+  /* border: none; */
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.whatsapp-btn.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  left: 2%;
+  top: 77%;
+}
+
+#body-scroll{
+  overflow: overlay;
+}
+#body-scroll::-webkit-scrollbar{
+  width: 12px;
+  background: transparent;
+}
+#body-scroll::-webkit-scrollbar-thumb{
+  background-color: #1d2366;
+  padding: 10px;
+}
